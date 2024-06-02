@@ -25,4 +25,5 @@ var cronCmd = &cobra.Command{
 func init() {
 	rootCmd.AddCommand(cronCmd)
 	cronCmd.Flags().BoolVar(&flags.CRON_LEAN, "lean", false, "only output information about actual backups")
+	cronCmd.Flags().BoolVar(&flags.CRON_DRY, "dry-run", false, "only check if any crons are ready to be executed")
 }

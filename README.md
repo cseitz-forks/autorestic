@@ -26,6 +26,7 @@
 ### Modifications by cseitz
 
 - Disabled functionality to overwrite config files. You will need to specifiy restic repo keys manually.
+- Added dry run flag for cron so we can determine if any cron jobs are due. Used to schedule actual runs in Rundeck so we don't have any empty runs. `autorestic cron --dry-run`
 
 ### 💭 Why / What?
 
