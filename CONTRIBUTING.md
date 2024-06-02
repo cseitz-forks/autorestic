@@ -54,3 +54,11 @@ autorestic cron --dry-run | grep -q "Cron is ready" && rd run --id [JOB-ID]
 restic -r /data/backups/local-1 snapshots
 ```
 
+## Publishing new Versions
+
+```bash
+# increment current version and run 'git tag [version]'
+git tag v1.8.6
+# push tags to github
+git push --tags
+```
