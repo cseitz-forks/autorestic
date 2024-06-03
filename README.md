@@ -28,6 +28,12 @@
 - Disabled functionality to overwrite config files. You will need to specifiy restic repo keys manually.
 - Added dry run flag for cron so we can determine if any cron jobs are due. Used to schedule actual runs in Rundeck so we don't have any empty runs. `autorestic cron --dry-run`
 
+### Installation
+
+```bash
+wget -qO - https://raw.githubusercontent.com/cseitz-forks/autorestic/main/install.sh | bash
+```
+
 ### 💭 Why / What?
 
 Autorestic is a wrapper around the amazing [restic](https://restic.net/). While being amazing the restic cli can be a bit overwhelming and difficult to manage if you have many different locations that you want to backup to multiple locations. This utility is aimed at making this easier 🙂.
